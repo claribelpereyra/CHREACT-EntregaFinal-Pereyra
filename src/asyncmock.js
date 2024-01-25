@@ -9,7 +9,7 @@ const libros = [
     { id: "8", nombre: "Tokio Blues", autor: "Haruki Murakami", precio: 19000, img: "./images/tb.jpg", idCat: 2},
     { id: "9", nombre: "Heartstopper", autor: "Alice Oseman", precio: 11000, img: "./images/nv.jpg", idCat: 2},
     { id: "10", nombre: "Agenda FREE", autor: "Clarisa", precio: 23000, img: "./images/agenda1.jpeg", idCat: 3},
-    { id: "11", nombre: "Agenda SHANTI", autor: "Clarisa", precio: 23000, img: "./images/agenda2.jpg", idCay: 3},
+    { id: "11", nombre: "Agenda SHANTI", autor: "Clarisa", precio: 23000, img: "./images/agenda2.jpg", idCat: 3},
     { id: "12", nombre: "Agenda FLOWERS", autor: "Clarisa", precio: 23000, img: "./images/agenda3.jpg", idCat: 3},
     { id: "13", nombre: "Agenda MINDFULL", autor: "Clarisa", precio: 23000, img: "./images/agenda4.jpg", idCat: 3},
     { id: "14", nombre: "Agenda KEMPES", autor: "Clarisa", precio: 23000, img: "./images/agenda5.jpg", idCat: 3},
