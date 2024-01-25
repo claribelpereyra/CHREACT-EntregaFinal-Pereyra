@@ -1,0 +1,4 @@
+.contenedorLibros {
+    display: flex;
+    flex-wrap: wrap;
+}

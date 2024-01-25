@@ -1,24 +1,28 @@
-import CardWidget from '../CartWidget/CartWidget'
-import './NavBar.css'
+import CardWidget from "../CartWidget/CartWidget";
+import "./NavBar.css";
+import { Link, NavLink } from "react-router-dom";
 
 const NavaBar = () => {
   return (
     <header>
-        <h1>BUSCA LIBRE</h1>
+      <Link to="/">
+        <h1>KEMPES LIBROS</h1>
+      </Link>
 
-        <nav>
-            <ul>
-                <li>Libros</li>
-                <li>Novedades</li>
-                <li>Preventa</li>
-                <li>Más vendidos</li>
-                <li>Agendas 2024</li>
-            </ul>
-        </nav>
-        <CardWidget/>
-    
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/categoria/2">Libros</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/categoria/3">Agendas</NavLink>
+          </li>
+        </ul>
+      </nav>
+      <CardWidget />
     </header>
-  )
-}
+  );
+};
 
-export default NavaBar
+export default NavaBar;
