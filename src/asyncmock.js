@@ -33,11 +33,11 @@ export const getUnLibro = (id) => {
     })
 }
 
-export const getLibrosPorCategoria = (idCat) => {
+export const getLibrosPorCat = (idCat) => {
     return new Promise(resolve => {
         setTimeout( () => {
-            const librosCategoria = libros.filter(prod => prod.idCat === idCat)
-            resolve(librosCategoria);
+            const librosCat = libros.filter(prod => prod.idCat === idCat)
+            resolve(librosCat);
         }, 2000)
     })
 }

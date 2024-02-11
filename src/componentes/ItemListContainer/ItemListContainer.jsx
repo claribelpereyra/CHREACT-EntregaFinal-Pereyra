@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
-import { getLibros, getLibrosPorCategoria } from "../../asyncmock";
+import { getLibros, getLibrosPorCat } from "../../asyncmock";
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
@@ -10,7 +10,7 @@ const ItemListContainer = () => {
   
   useEffect( ()=> {
 
-    const funcionLibros = idCata ? getLibrosPorCategoria : getLibros;
+    const funcionLibros = idCat ? getLibrosPorCat : getLibros;
     
     funcionLibros(idCat)
       .then(res => setLibros(res))
