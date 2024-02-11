@@ -1,10 +1,9 @@
-.contenedorItemDetail {
+.contenedorItem {
     text-align: center;
-    margin: 5%;
-    align-items: center;
-    border: 1px solid wheat;
+    border: 1px solid black;
+    margin: 3rem;
 }
 
 img {
-    width: 100vw;
+    width: 50vw;
 }

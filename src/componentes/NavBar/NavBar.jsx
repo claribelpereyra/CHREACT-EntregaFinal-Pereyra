@@ -1,28 +1,36 @@
-import CardWidget from "../CartWidget/CartWidget";
-import "./NavBar.css";
-import { Link, NavLink } from "react-router-dom";
+import CartWidget from '../CartWidget/CartWidget';
+import './NavBar.css';
+import {Link, NavLink} from "react-router-dom";
 
-const NavaBar = () => {
+const NavBar = () => {
   return (
     <header>
       <Link to="/">
-        <h1>KEMPES LIBROS</h1>
+        <h1>Tienda KEMPES </h1>
       </Link>
 
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/idCat/2">Libros</NavLink>
-          </li>
+        <nav>
+            <ul>
 
-          <li>
-            <NavLink to="/idCat/3">Agendas</NavLink>
-          </li>
-        </ul>
-      </nav>
-      <CardWidget />
+                <li>
+                  <NavLink to="/categoria/2">
+                    Libros
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/categoria/3">
+                    Agendas
+                  </NavLink>
+                </li>
+
+            </ul>
+        </nav>
+
+        <CartWidget/>
+
     </header>
-  );
-};
+  )
+}
 
-export default NavaBar;
+export default NavBar
