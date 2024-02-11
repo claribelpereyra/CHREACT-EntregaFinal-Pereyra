@@ -6,17 +6,17 @@ import { useParams } from "react-router-dom";
 const ItemListContainer = () => {
   const [libros, setLibros] = useState([]);
   
-  const {idCategoria} = useParams();
+  const {idCat} = useParams();
   
   useEffect( ()=> {
 
-    const funcionLibros = idCategoria ? getLibrosPorCategoria : getLibros;
+    const funcionLibros = idCata ? getLibrosPorCategoria : getLibros;
     
-    funcionLibros(idCategoria)
+    funcionLibros(idCat)
       .then(res => setLibros(res))
       .catch(error => console.log(error))
       
-    }, [idCategoria])
+    }, [idCat])
 
   return (
     <div>

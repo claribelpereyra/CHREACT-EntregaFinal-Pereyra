@@ -12,7 +12,7 @@ const App = () => {
         <NavaBar />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
-          <Route path="/categories/:idCategory" element={<ItemListContainer />} />
+          <Route path="/categories/:idCat" element={<ItemListContainer />} />
           <Route path="/item/:idItem" element={<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>
