@@ -1,7 +1,7 @@
 import React from 'react';
 import './ItemDetail.css';
 
-const ItemDetail = (id, nombre, autor, precio, img) => {
+const ItemDetail = ({id, nombre, precio, img}) => {
   return (
     <div className='contenedorItemDetail'>
         <h1> {nombre} </h1>
