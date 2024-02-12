@@ -6,15 +6,26 @@ const NavBar = () => {
   return (
     <header>
       <Link to="/">
-        <h1>Tienda KEMPES </h1>
+      <img className="imgLogo" src="../images/logo.jpeg" alt="logo" />
       </Link>
 
         <nav>
-            <ul>
+            <ul>          
+                <li>
+                  <NavLink to="/categoria/1">
+                    Libros
+                  </NavLink>
+                </li>
 
                 <li>
                   <NavLink to="/categoria/2">
-                    Libros
+                    Inglés
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/categoria/4">
+                    PACKS
                   </NavLink>
                 </li>
 
@@ -23,7 +34,6 @@ const NavBar = () => {
                     Agendas
                   </NavLink>
                 </li>
-
             </ul>
         </nav>
 
