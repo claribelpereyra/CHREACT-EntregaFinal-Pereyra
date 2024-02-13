@@ -5,9 +5,6 @@ const CategoriaImage = ({ categoria }) => {
   let imgCat;
 
   switch (categoria) {
-    case '/':
-      imgCat = '../images/libros.png';
-      break;
     case '1':
       imgCat = '../images/libros.png';
       break;

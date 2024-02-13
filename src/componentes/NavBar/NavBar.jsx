@@ -13,19 +13,31 @@ const NavBar = () => {
             <ul>          
                 <li>
                   <NavLink to="/categoria/1">
-                    Libros
+                    LIBROS
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink to="/categoria/2">
-                    Inglés
+                    INGLÉS
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink to="/categoria/4">
                     PACKS
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/categoria/5">
+                    SALE
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/categoria/merch">
+                    Merch
                   </NavLink>
                 </li>
 
