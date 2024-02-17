@@ -1,9 +1,83 @@
 .contenedorItem {
-    text-align: center;
-    border: 1px solid black;
-    margin: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(228, 228, 228);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .detalles {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333; 
 }
 
-img {
-    width: 50vw;
-}
+.descripcion {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .precio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #436955;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  
+  .acciones {
+    display: flex;
+    gap: 20px;
+    color: #436955;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .boton-terminar,
+  .boton-seguir {
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .boton-seguir {
+    background-color: #28a745;
+  }
+  
+  .boton-terminar:hover,
+  .boton-seguir:hover {
+    background-color: #0056b3;
+  }
+  
+  .sinopsis {
+    flex: 1;
+    text-align: justify;
+  }
+  
+  .sinopsis h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
