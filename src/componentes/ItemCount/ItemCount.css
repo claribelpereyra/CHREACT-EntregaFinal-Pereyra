@@ -1,0 +1,16 @@
+.cart-button {
+    background-color: #587759;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height:inherit ;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .cart-button:hover {
+    background-color: #759e76;
+  }

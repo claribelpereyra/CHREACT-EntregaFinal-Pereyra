@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { CarritoContext } from "../../context/CarritoContext";
 import { db } from "../../services/config";
 import { collection, addDoc } from "firebase/firestore";
+import './Checkout.css';
 
 const Checkout = () => {
     const { carrito, vaciarCarrito, total } = useContext(CarritoContext);
@@ -53,10 +54,10 @@ const Checkout = () => {
     }
 
     return (
-        <div>
-            <h2>Checkout - Finalizamos la Compra </h2>
+        <div className="checkout-container">
+            <h2 className="checkout-title"> Checkout - Ya casi es tuyo🙌 </h2>
 
-            <form onSubmit={manejadorSubmit}>
+            <form className="checkout-form" onSubmit={manejadorSubmit}>
                 {
                     carrito.map(producto => (
                         <div key={producto.item.id}>
@@ -93,13 +94,13 @@ const Checkout = () => {
                 </div>
 
                 {
-                    error && <p style={{ color: "red" }}> {error} </p>
+                    error && <p className="checkout-message"> {error} </p>
                 }
 
                 <button> Finalizar Orden </button>
 
                 {
-                    ordenId && <strong>¡Gracias por su compra! Tu número de orden es: {ordenId} </strong>
+                    ordenId && <strong className="checkout-message">¡Gracias por su compra! Tu número de orden es: {ordenId} </strong>
                 }
 
             </form>

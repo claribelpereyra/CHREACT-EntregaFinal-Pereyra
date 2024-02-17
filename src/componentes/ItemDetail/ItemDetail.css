@@ -27,6 +27,7 @@
     font-size: 2rem;
   margin-bottom: 10px;
   color: #333; 
+  text-decoration: underline;
 }
 
 .descripcion {
@@ -40,40 +41,39 @@
     font-weight: bold;
     color: #436955;
     margin-bottom: 20px;
-    text-decoration: underline;
   }
   
   .acciones {
-    display: flex;
     gap: 20px;
-    color: #436955;
-    padding: 10px 20px;
+    color: #000000;
     font-weight: bold;
-    margin-bottom: 20px;
     text-align: center;
   }
   
   .boton-terminar,
   .boton-seguir {
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #587759;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    color: white;
   }
   
   .boton-seguir {
-    background-color: #28a745;
+    background-color: #587759;
+    ;
   }
   
   .boton-terminar:hover,
   .boton-seguir:hover {
-    background-color: #0056b3;
+    background-color: #759e76;
   }
   
   .sinopsis {
     flex: 1;
-    text-align: justify;
+    text-align: left;
+
   }
   
   .sinopsis h4 {

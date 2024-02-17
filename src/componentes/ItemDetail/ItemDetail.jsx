@@ -1,4 +1,3 @@
-// En tu archivo ItemDetail.js
 import { useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
@@ -33,7 +32,7 @@ const ItemDetail = ({ id, nombre, autor, stock, precio, img, sinopsis }) => {
         {agregarCantidad > 0 ? (
           <div className="acciones">
             <Link to="/cart" className="boton-terminar">Terminar compra</Link>
-            <Link to="/seguir-comprando" className="boton-seguir">Seguir comprando</Link>
+            <Link to="/" className="boton-seguir">Seguir comprando</Link>
           </div>
         ) : (
           <div className="acciones">

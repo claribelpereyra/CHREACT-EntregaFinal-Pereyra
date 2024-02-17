@@ -1,0 +1,15 @@
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    box-sizing: border-box; 
+}
+
+  .cart-item h3 {
+    margin: 0;
+  }
+  
+  .cart-item p {
+    margin: 5px 0;
+  }
